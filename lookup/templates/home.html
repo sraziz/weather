@@ -1,8 +1,16 @@
 {% extends 'base.html' %}
 
-
 {% block content %}
 
-<h1>Air Quality Index</h1>
+<div class="jumbotron">
+  <h1 class="display-4">Weather Update: {{ api.name }}, INDIA </h1>
+  <hr class="my-3">
+  <p class="lead"><b>The Current Temperature is</b> {{ api.main.temp }} <b>°C</b>. 
+  	<br> 
+  <b> It actually feels like </b> {{ api.main.feels_like }} <b>°C</b>
+  <hr class="my-3">
+  
+</div>
+
 
 {% endblock %}
